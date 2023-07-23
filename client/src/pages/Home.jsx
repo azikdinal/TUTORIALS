@@ -2,7 +2,7 @@ import {useSnapshot} from "valtio";
 import {AnimatePresence, motion} from "framer-motion";
 import state from "../store/index.js";
 import {headContainerAnimation, headTextAnimation, slideAnimation} from "../config/motion.js";
-import CustomButtom from "../components/CustomButtom.jsx";
+import CustomButton from "../components/CustomButton.jsx";
 
 const Home = () => {
     const snap = useSnapshot(state)
@@ -29,7 +29,7 @@ const Home = () => {
                             </strong> {" "} and define your own style.
                             </p>
 
-                            <CustomButtom
+                            <CustomButton
                                 type="filled"
                                 title="Customise It"
                                 handleClick={() => state.intro = false}
