@@ -1,5 +1,6 @@
 import React from 'react';
 import {preview} from "../assets/index.js";
+import {Loader} from "./index.js";
 
 const FormField = ({labelName, name, placeholder, type, value, handleChange, handleSurpriseMe, isSurpriseMe}) => {
     return (
@@ -29,6 +30,13 @@ const FormField = ({labelName, name, placeholder, type, value, handleChange, han
                     />
                 ) : (
                     <img src={preview} alt="preview" className='w-9/12 h-9/12 object-contain opacity-40'/>
+                )}
+
+                {generatingImg && (
+                    <div
+                        className='absolute inset-0 z-0 flex justify-center items-center bg-[rgba(0,0,0,0.5)] rounded-lg'>
+                        <Loader />
+                    </div>
                 )}
             </div>
         </div>
