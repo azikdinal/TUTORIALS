@@ -1,7 +1,9 @@
-import CustomButton from './CustomButton.jsx'
-import AIPicker from './AIPicker.jsx'
-import ColorPicker from './ColorPicker.jsx'
-import FilePicker from './FilePicker.jsx'
-import Tab from './Tab.jsx'
+import Card from './Card.jsx'
+import FormField from './FormField.jsx'
+import Loader from './Loader.jsx'
 
-export {CustomButton, AIPicker, ColorPicker, FilePicker, Tab}
+export {
+    Card,
+    FormField,
+    Loader
+}
